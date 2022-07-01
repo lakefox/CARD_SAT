@@ -174,10 +174,23 @@ void GETPOS()
     }
 
     // Send pos immediately
-    // POSUPDATE+90 5.334
-    scheduleVec.push_back({millis(), sendMAIN, "POSUPDATE+" + to_string(pos) + " " + to_string((millis() / orbitCompleteTime) * 100)});
+    // Estimated degrees to the sun
+
+    // Add 180 to bring pos to a 360 then get percent
+    float posPercent = (pos + 180) / 360;
+
+    // percent of orbit complete in time from peak light
+    float timePercent = (millis() / orbitCompleteTime) * 100;
+
+    // Get the average of the estimated percents
+    float avgPercent = (posPercent + timePercent) / 2;
+
+    float avgDeg = 360 * avgPercent;
+    // POSUPDATE+degs
+    scheduleVec.push_back({millis(), sendMAIN, "POSUPDATE+" + to_string(avgDeg)});
 }
 
+// This is a function that will execute a function at a specific time.
 void schedule()
 {
     // scheduleVec is a vector that holds arrays that contain when you want to execute an action then the action and the arg
@@ -192,6 +205,7 @@ void schedule()
     }
 }
 
+// This function is updating the vrefs array with the current voltage readings from the solar panels.
 void updateVREF()
 {
     vrefs[0] = analogRead(2);
@@ -257,6 +271,7 @@ void sendI2C()
                 if (I2CBuffer.length() == 0)
                 {
                     sendSATCOND = false;
+                    sendingSAT = false;
                     TinyWireM.endTransmission(); // end call to slave
                 }
             }
@@ -292,6 +307,7 @@ void sendI2C()
                 if (I2CBuffer.length() == 0)
                 {
                     sendMAINCOND = false;
+                    sendingMAIN = false;
                     TinyWireM.endTransmission(); // end call to slave
                 }
             }

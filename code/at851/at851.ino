@@ -4,6 +4,7 @@
 #include <TinyWireM.h>
 #include <vector>
 #include <string>
+#include <algorithm>
 #include <map>
 using namespace std;
 
@@ -205,7 +206,12 @@ void LOCREQ(string msg)
 
     // Check if user is stored
     if (!users[parseLOQREQ[0]])
-    {
+    { // user is not stored
+
+        // jsut this code needs to stay
+        I2CBuffer.push_back("CHECKNET+" + parsedLOCREQ[0]);
+        sendSATCOND = true;
+        // this need to be ran after the CHECKNET+ command gets a responce
         string id = RandomString(10);
         users.insert(pair<string, vector<string>>{id, {}});
         // UTCTIMESTAMP
@@ -214,9 +220,17 @@ void LOCREQ(string msg)
         users[id].push_back(lastLOC);
     }
     else
-    {
-        I2CBuffer.push_back("CHECKNET+" + parsedLOCREQ[0]);
-        sendSATCOND = true;
+    { // user is stored
+        // message has already been relayed by the bridged connection
+        // now we need to store the location
+        // UTCTIMESTAMP
+        users[parseLOQREQ[0]].push_back(parsedLOCREQ[1]);
+        // Position
+        users[parseLOQREQ[0]].push_back(lastLOC);
+        float postion = calcOrbitExit(parseLOQREQ[0]);
+        // send location to user
+        // POSIT+satID userID %ofOrbitLeft
+        scheduleVec.push_back({millis(), sendViaUART, "POSIT+" + myId + " " + parseLOQREQ[0] + " " + to_string(position)});
     }
 
     // Add the GETPOS+ command to the que
@@ -237,12 +251,34 @@ void SATCMD(string msg)
 
 void OTHER(string msg)
 {
+    // FROM userId TO otherUserId message
+    vector<string> parsed = split(msg, " ");
+    if (users[parsed[3]])
+    {
+        // if the user has connected check if they are out of range
+        // we dont care if the user is in range because the message would have been automatically retransmitted
+        float pos = calcOrbitExit(parsed[3]);
+        if (pos <= 0 && pos >= 100)
+        {
+            // user is not in range
+            // ask net work if they reply we will have to reroute the message
+            I2CBuffer.push_back("CHECKNET+" + parsedLOCREQ[0]);
+            sendSATCOND = true;
+        }
+    }
+    else
+    {
+        // user is not stored
+        // ask net work if they reply we will have to reroute the message
+        I2CBuffer.push_back("CHECKNET+" + parsedLOCREQ[0]);
+        sendSATCOND = true;
+    }
 }
 
 void SETPOS(string data)
 {
     // {Degress to the sun, % of orbit complete}
-    lastLOC = split(data.substr(data.find("+") + 1), " ");
+    lastLOC = data.substr(data.find("+") + 1);
 }
 
 // This function will send any message in the buffer to the correct "slave" I2C one byte at a time
@@ -297,6 +333,7 @@ void sendI2C()
                 if (I2CBuffer.length() == 0)
                 {
                     sendSATCOND = false;
+                    sendingSAT = false;
                     TinyWireM.endTransmission(); // end call to slave
                 }
             }
@@ -332,6 +369,7 @@ void sendI2C()
                 if (I2CBuffer.length() == 0)
                 {
                     sendOMCOND = false;
+                    sendingOM = false;
                     TinyWireM.endTransmission(); // end call to slave
                 }
             }
@@ -395,4 +433,37 @@ string RandomString(int len)
         newstr += str.substr(pos, 1);
     }
     return newstr;
+}
+
+float calcOrbitExit(string id)
+{
+    // first find where we are in the orbit using time
+    // then find the smallest position and the largest
+    // calc percent of orbit complete
+    float minV = 101;
+    float maxV = 0;
+
+    if (users[id])
+    {
+        // step by 2 because users alternates time and position
+        for (int i = 0; i < users[id].length(); i += 2)
+        {
+            float pos = stof(users[i + 1]);
+            if (pos > maxV)
+            {
+                maxV = pos;
+            }
+            else if (pos < minV)
+            {
+                minV = pos;
+            }
+        }
+
+        float ourPos = stof(lastLOC.substr(lastLOC.find("+") + 1));
+
+        // we will return percent complete of orbit fly over
+        // if its out of range we will put a 0 or 100 depending if we are > or <
+        // 0,0,0,0,0,0,1,2,3,4,5....,99,100,100,100,100...0,0,0,0,0,1,2,3...99,100,100...etc
+        return max(min((ourPos - minV) / maxV), 100, 0)
+    }
 }
