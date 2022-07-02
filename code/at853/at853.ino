@@ -187,7 +187,7 @@ void GETPOS()
 
     float avgDeg = 360 * avgPercent;
     // POSUPDATE+degs
-    scheduleVec.push_back({millis(), sendMAIN, "POSUPDATE+" + to_string(avgDeg)});
+    I2CBuffer.push_back("POSUPDATE+" + to_string(avgDeg));
 }
 
 // This is a function that will execute a function at a specific time.
@@ -211,12 +211,6 @@ void updateVREF()
     vrefs[0] = analogRead(2);
     vrefs[1] = analogRead(3);
     vrefs[2] = analogRead(6);
-}
-
-void sendMAIN(string msg)
-{
-    sendMAINCOND = true;
-    I2CBuffer.push_back(msg);
 }
 
 // This function will send any message in the buffer to the correct "slave" I2C one byte at a time

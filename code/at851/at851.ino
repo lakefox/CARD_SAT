@@ -184,6 +184,9 @@ void loop()
         case tag2 == "POSUPDATE":
             SETPOS(data);
             break;
+        case tag2 == "NETCHECK":
+            NETCHECK(data);
+            break;
         default:
             break;
         }
@@ -194,24 +197,12 @@ void LOCREQ(string msg)
 {
     // An LOCREQ message will be in the following format
     // LOCREQ+SATID USERID UTCTIMESTAMP
-
-    // TODO:
-    //       RX LOCREQ
-    //       Store POS
-    //       Send CHECKNET+
-    //       RX CHECKNET+ and reply
-
     // returns {"USERID", "UTCTIMESTAMP"}
     vector<string> parsedLOCREQ = split(msg.substr(msg.find("+") + 1), " ");
 
     // Check if user is stored
     if (!users[parseLOQREQ[0]])
     { // user is not stored
-
-        // jsut this code needs to stay
-        I2CBuffer.push_back("CHECKNET+" + parsedLOCREQ[0]);
-        sendSATCOND = true;
-        // this need to be ran after the CHECKNET+ command gets a responce
         string id = RandomString(10);
         users.insert(pair<string, vector<string>>{id, {}});
         // UTCTIMESTAMP
@@ -273,6 +264,14 @@ void OTHER(string msg)
         I2CBuffer.push_back("CHECKNET+" + parsedLOCREQ[0]);
         sendSATCOND = true;
     }
+}
+
+void NETCHECK(string data)
+{
+    // No
+    // NETCHECK+satID userID 0
+    // Yes
+    // NETCHECK+satID userID 1
 }
 
 void SETPOS(string data)
