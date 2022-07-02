@@ -90,6 +90,13 @@ string myId = "sat1";
 // }
 map<string, vector<string>> users;
 
+// messageQue
+// {
+//     "userID": ["from", "message"]
+// }
+
+map<string, vector<string>> messageQue;
+
 // I2C master reference
 // https://github.com/nadavmatalon/TinyWireM/blob/master/examples/TinyWireM_example/ATtiny841_Master/ATtiny841_Master.ino
 
@@ -253,15 +260,20 @@ void OTHER(string msg)
         {
             // user is not in range
             // ask net work if they reply we will have to reroute the message
-            I2CBuffer.push_back("CHECKNET+" + parsedLOCREQ[0]);
+            I2CBuffer.push_back("CHECKNET+" + parsed[1]);
             sendSATCOND = true;
+            messageQue.insert(pair<string, vector<string>>{parsed[3], {}});
+            // add FROM
+            messageQue[parsed[3]].push_back(parsed[1]);
+            // add message
+            messageQue[parsed[3]].push_back(parsed[4]);
         }
     }
     else
     {
         // user is not stored
         // ask net work if they reply we will have to reroute the message
-        I2CBuffer.push_back("CHECKNET+" + parsedLOCREQ[0]);
+        I2CBuffer.push_back("CHECKNET+" + parsed[1]);
         sendSATCOND = true;
     }
 }
@@ -272,6 +284,15 @@ void NETCHECK(string data)
     // NETCHECK+satID userID 0
     // Yes
     // NETCHECK+satID userID 1
+
+    vector<string> parsed = split(data.substr(data.find("+") + 1), " ");
+
+    if (parsed[2] == "1")
+    {
+        // RELAY+satID TO FROM msg
+        I2CBuffer.push_back("RELAY+" + parsed[0] + " " + parsed[1] + " " + messageQue[parsed[1]][0] + " " + mesageQue[parsed[1]][1]);
+        messageQue.erase(parsed[1]);
+    }
 }
 
 void SETPOS(string data)
