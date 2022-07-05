@@ -241,6 +241,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.obj: Users
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -251,6 +252,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.i: Users/m
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -261,6 +263,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.s: Users/m
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -271,6 +274,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.obj: Users/masonw
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -281,6 +285,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/masonwri
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -291,6 +296,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/masonwri
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -301,6 +307,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.obj: Users/masonwrigh
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -311,6 +318,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.i: Users/masonwright/
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -321,6 +329,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.s: Users/masonwright/
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -331,6 +340,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.obj: Users/masonwright/
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -341,6 +351,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.i: Users/masonwright/pi
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -351,6 +362,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.s: Users/masonwright/pi
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -361,6 +373,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_time/time.obj: Users/masonwright
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -371,6 +384,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_time/time.i: Users/masonwright/p
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -381,6 +395,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_time/time.s: Users/masonwright/p
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -391,6 +406,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: Users/m
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -401,6 +417,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/mas
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -411,6 +428,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/mas
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -421,6 +439,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.obj: Users/masonwr
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -431,6 +450,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.i: Users/masonwrig
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -441,6 +461,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.s: Users/masonwrig
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -451,6 +472,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.obj: Users/masonwrigh
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -461,6 +483,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.i: Users/masonwright/
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -471,6 +494,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.s: Users/masonwright/
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -481,6 +505,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.obj: Users/masonwrigh
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -491,6 +516,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.i: Users/masonwright/
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -501,6 +527,7 @@ Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.s: Users/masonwright/
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -511,6 +538,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: Users/m
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -521,6 +549,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: Users/mas
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -531,6 +560,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: Users/mas
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -541,6 +571,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: Users
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -551,6 +582,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: Users/m
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -561,6 +593,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: Users/m
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -571,6 +604,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: Use
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -581,6 +615,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Users/mas
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -591,6 +626,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/mason
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -601,6 +637,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/mason
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -611,6 +648,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: Users/mason
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -621,6 +659,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/masonwr
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -631,6 +670,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/masonwr
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -641,6 +681,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.ob
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -651,6 +692,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: Users/mason
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
@@ -661,6 +703,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: Users/masonwr
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
@@ -671,6 +714,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: Users/masonwr
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
@@ -681,6 +725,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: Users/mason
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -691,6 +736,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/masonwr
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -701,6 +747,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/masonwr
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -711,6 +758,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Users/mas
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -721,6 +769,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/mason
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -731,6 +780,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/mason
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -741,6 +791,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: Users/m
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -751,6 +802,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/mas
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -761,6 +813,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/mas
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -771,6 +824,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: Users/mas
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -781,6 +835,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/mason
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -791,6 +846,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/mason
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -801,6 +857,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: Users/mas
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -811,6 +868,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/mason
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -821,6 +879,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/mason
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -831,6 +890,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: U
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -841,6 +901,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: Use
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -851,6 +912,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: Use
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -861,6 +923,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: Users/mas
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -871,6 +934,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/mason
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -881,6 +945,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/mason
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -891,6 +956,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: U
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -901,6 +967,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: Users/m
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -911,6 +978,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/mas
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -921,6 +989,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/mas
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -931,6 +1000,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: Users/m
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -941,6 +1011,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: Use
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -951,6 +1022,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: 
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -961,6 +1033,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: Us
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -971,6 +1044,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: Us
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -981,6 +1055,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: User
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -991,6 +1066,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: Users/
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1001,6 +1077,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: Users/
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1011,6 +1088,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.ob
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1021,6 +1099,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: Users
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1031,6 +1110,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: Us
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1041,6 +1121,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: User
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1051,6 +1132,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: User
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1061,6 +1143,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: Users/
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1071,6 +1154,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users/ma
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1081,6 +1165,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users/ma
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1091,6 +1176,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj:
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1101,6 +1187,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aea
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1111,6 +1198,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: User
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1121,6 +1209,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: Users/
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1131,6 +1220,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: Users/
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1141,6 +1231,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: U
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1151,6 +1242,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: Use
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 
@@ -1160,6 +1252,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: Users
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 
@@ -1169,6 +1262,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: Users
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
@@ -1178,6 +1272,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: Users
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1188,6 +1283,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: Users/m
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1198,6 +1294,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: Users/m
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1208,6 +1305,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: Users/mas
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1218,6 +1316,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/mason
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1228,6 +1327,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/mason
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1238,6 +1338,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: Users/m
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1248,6 +1349,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/mas
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1258,6 +1360,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/mas
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1268,6 +1371,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.ob
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1278,6 +1382,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i:
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1288,6 +1393,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s:
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1298,6 +1404,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: User
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1308,6 +1415,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1318,6 +1426,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: 
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1328,6 +1437,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: 
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1338,6 +1448,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: Users/mason
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1348,6 +1459,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/masonwr
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1358,6 +1470,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/masonwr
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1368,6 +1481,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: U
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1378,6 +1492,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: Use
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1388,6 +1503,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: Use
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1398,6 +1514,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/mas
 
 # target to build an object file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1408,6 +1525,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/mason
 
 # target to preprocess a source file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1418,6 +1536,7 @@ Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/mason
 
 # target to generate assembly for a file
 Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
+	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	cd /Users/masonwright/Documents/card_sat/code/build && $(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s

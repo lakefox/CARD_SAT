@@ -1,2 +1,2 @@
 /* uart.h */
-extern int uartTX(int msg);
+extern int uartTX(char msg);

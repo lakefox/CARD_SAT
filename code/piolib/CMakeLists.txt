@@ -20,8 +20,15 @@ target_link_libraries(pio_uart_rx PRIVATE
     hardware_pio
 )
 
+target_link_libraries(uart PRIVATE
+    pico_stdlib
+    pico_multicore
+    hardware_pio
+)
+
 pico_add_extra_outputs(pio_uart_tx)
 pico_add_extra_outputs(pio_uart_rx)
+pico_add_extra_outputs(uart)
 
 # Create C header file with the name <pio program>.pio.h
 pico_generate_pio_header(${PROJECT_NAME}

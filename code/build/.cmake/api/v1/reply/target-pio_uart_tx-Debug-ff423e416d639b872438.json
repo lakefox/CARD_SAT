@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "piolib/pio_uart_rx.elf"
+			"path" : "piolib/pio_uart_tx.elf"
 		}
 	],
 	"backtrace" : 1,
@@ -39,13 +39,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 17,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
@@ -97,7 +97,7 @@
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 10,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
@@ -109,7 +109,7 @@
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 24,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
@@ -127,7 +127,7 @@
 			{
 				"command" : 10,
 				"file" : 0,
-				"line" : 13,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -208,10 +208,6 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "LIB_PICO_MULTICORE=1"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "LIB_PICO_PLATFORM=1"
 				},
 				{
@@ -304,7 +300,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"pio_uart_rx\""
+					"define" : "PICO_TARGET_NAME=\"pio_uart_tx\""
 				},
 				{
 					"backtrace" : 2,
@@ -467,10 +463,6 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/include"
-				},
-				{
-					"backtrace" : 2,
 					"path" : "/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/include"
 				}
 			],
@@ -511,8 +503,7 @@
 				43,
 				44,
 				45,
-				46,
-				47
+				46
 			]
 		},
 		{
@@ -586,10 +577,6 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "LIB_PICO_MULTICORE=1"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "LIB_PICO_PLATFORM=1"
 				},
 				{
@@ -682,7 +669,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"pio_uart_rx\""
+					"define" : "PICO_TARGET_NAME=\"pio_uart_tx\""
 				},
 				{
 					"backtrace" : 2,
@@ -842,10 +829,6 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/include"
 				},
 				{
 					"backtrace" : 2,
@@ -958,10 +941,6 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "LIB_PICO_MULTICORE=1"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "LIB_PICO_PLATFORM=1"
 				},
 				{
@@ -1054,7 +1033,7 @@
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"pio_uart_rx\""
+					"define" : "PICO_TARGET_NAME=\"pio_uart_tx\""
 				},
 				{
 					"backtrace" : 2,
@@ -1217,10 +1196,6 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/include"
-				},
-				{
-					"backtrace" : 2,
 					"path" : "/Users/masonwright/pico/pico-sdk/src/rp2_common/hardware_pio/include"
 				}
 			],
@@ -1243,10 +1218,10 @@
 		},
 		{
 			"backtrace" : 13,
-			"id" : "pio_uart_rx_uart_rx_pio_h::@2354aa72338b268da04f"
+			"id" : "pio_uart_tx_uart_tx_pio_h::@2354aa72338b268da04f"
 		}
 	],
-	"id" : "pio_uart_rx::@2354aa72338b268da04f",
+	"id" : "pio_uart_tx::@2354aa72338b268da04f",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -2031,7 +2006,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-Map=pio_uart_rx.elf.map",
+				"fragment" : "-Wl,-Map=pio_uart_tx.elf.map",
 				"role" : "flags"
 			},
 			{
@@ -2081,8 +2056,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "pio_uart_rx",
-	"nameOnDisk" : "pio_uart_rx.elf",
+	"name" : "pio_uart_tx",
+	"nameOnDisk" : "pio_uart_tx.elf",
 	"paths" : 
 	{
 		"build" : "piolib",
@@ -2129,8 +2104,7 @@
 				43,
 				44,
 				45,
-				46,
-				47
+				46
 			]
 		},
 		{
@@ -2156,7 +2130,7 @@
 		{
 			"backtrace" : 17,
 			"compileGroupIndex" : 0,
-			"path" : "piolib/uart_rx.c",
+			"path" : "piolib/uart_tx.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -2427,12 +2401,6 @@
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c",
 			"sourceGroupIndex" : 0
 		},
 		{

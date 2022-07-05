@@ -1065,7 +1065,7 @@
 				{
 					"directoryIndex" : 74,
 					"id" : "pio_uart_rx::@2354aa72338b268da04f",
-					"jsonFile" : "target-pio_uart_rx-Debug-04ec598807d93bc0d476.json",
+					"jsonFile" : "target-pio_uart_rx-Debug-6f44120bd285e8f5cbd9.json",
 					"name" : "pio_uart_rx",
 					"projectIndex" : 2
 				},
@@ -1079,7 +1079,7 @@
 				{
 					"directoryIndex" : 74,
 					"id" : "pio_uart_tx::@2354aa72338b268da04f",
-					"jsonFile" : "target-pio_uart_tx-Debug-69d7c49e1c92a0cdfb9e.json",
+					"jsonFile" : "target-pio_uart_tx-Debug-ff423e416d639b872438.json",
 					"name" : "pio_uart_tx",
 					"projectIndex" : 2
 				},
@@ -1093,21 +1093,21 @@
 				{
 					"directoryIndex" : 74,
 					"id" : "uart::@2354aa72338b268da04f",
-					"jsonFile" : "target-uart-Debug-9742296a72e0a2782323.json",
+					"jsonFile" : "target-uart-Debug-80bf8571aa61223773a7.json",
 					"name" : "uart",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 74,
 					"id" : "uart_uart_rx_pio_h::@2354aa72338b268da04f",
-					"jsonFile" : "target-uart_uart_rx_pio_h-Debug-6554f3240f49dd644241.json",
+					"jsonFile" : "target-uart_uart_rx_pio_h-Debug-de255ff0ae9e12e98085.json",
 					"name" : "uart_uart_rx_pio_h",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 74,
 					"id" : "uart_uart_tx_pio_h::@2354aa72338b268da04f",
-					"jsonFile" : "target-uart_uart_tx_pio_h-Debug-7f520319669b623d1c45.json",
+					"jsonFile" : "target-uart_uart_tx_pio_h-Debug-2a05fc39a3d7cbe0460e.json",
 					"name" : "uart_uart_tx_pio_h",
 					"projectIndex" : 2
 				}
