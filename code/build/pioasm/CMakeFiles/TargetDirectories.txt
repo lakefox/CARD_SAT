@@ -1,0 +1,3 @@
+/Users/masonwright/Documents/card_sat/code/build/pioasm/CMakeFiles/rebuild_cache.dir
+/Users/masonwright/Documents/card_sat/code/build/pioasm/CMakeFiles/edit_cache.dir
+/Users/masonwright/Documents/card_sat/code/build/pioasm/CMakeFiles/pioasm.dir
