@@ -2132,6 +2132,7 @@ CMakeFiles/main.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_unique_i
 CMakeFiles/main.dir/Users/masonwright/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: generated/pico_base/pico/version.h
 
 CMakeFiles/main.dir/main.c.obj: ../main.c
+CMakeFiles/main.dir/main.c.obj: ../piolib/uart.h
 CMakeFiles/main.dir/main.c.obj: /Users/masonwright/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/main.dir/main.c.obj: /Users/masonwright/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/main.dir/main.c.obj: /Users/masonwright/pico/pico-sdk/src/common/pico_base/include/pico/assert.h

@@ -1,4 +1,6 @@
-make: *** No targets specified and no makefile found.  Stop.
-
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/masonwright/Documents/card_sat/code'
 make: Leaving directory `/Users/masonwright/Documents/card_sat/code'
  
+make: *** No targets specified and no makefile found.  Stop.
+

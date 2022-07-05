@@ -234,6 +234,97 @@ cyw43_firmware_package/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
 .PHONY : cyw43_firmware_package/fast
 
+#=============================================================================
+# Target rules for targets named uart_uart_rx_pio_h
+
+# Build rule for target.
+uart_uart_rx_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uart_uart_rx_pio_h
+.PHONY : uart_uart_rx_pio_h
+
+# fast build rule for target.
+uart_uart_rx_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart_uart_rx_pio_h.dir/build.make piolib/CMakeFiles/uart_uart_rx_pio_h.dir/build
+.PHONY : uart_uart_rx_pio_h/fast
+
+#=============================================================================
+# Target rules for targets named uart_uart_tx_pio_h
+
+# Build rule for target.
+uart_uart_tx_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uart_uart_tx_pio_h
+.PHONY : uart_uart_tx_pio_h
+
+# fast build rule for target.
+uart_uart_tx_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart_uart_tx_pio_h.dir/build.make piolib/CMakeFiles/uart_uart_tx_pio_h.dir/build
+.PHONY : uart_uart_tx_pio_h/fast
+
+#=============================================================================
+# Target rules for targets named pio_uart_rx_uart_rx_pio_h
+
+# Build rule for target.
+pio_uart_rx_uart_rx_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pio_uart_rx_uart_rx_pio_h
+.PHONY : pio_uart_rx_uart_rx_pio_h
+
+# fast build rule for target.
+pio_uart_rx_uart_rx_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx_uart_rx_pio_h.dir/build.make piolib/CMakeFiles/pio_uart_rx_uart_rx_pio_h.dir/build
+.PHONY : pio_uart_rx_uart_rx_pio_h/fast
+
+#=============================================================================
+# Target rules for targets named pio_uart_tx_uart_tx_pio_h
+
+# Build rule for target.
+pio_uart_tx_uart_tx_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pio_uart_tx_uart_tx_pio_h
+.PHONY : pio_uart_tx_uart_tx_pio_h
+
+# fast build rule for target.
+pio_uart_tx_uart_tx_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx_uart_tx_pio_h.dir/build.make piolib/CMakeFiles/pio_uart_tx_uart_tx_pio_h.dir/build
+.PHONY : pio_uart_tx_uart_tx_pio_h/fast
+
+#=============================================================================
+# Target rules for targets named uart
+
+# Build rule for target.
+uart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uart
+.PHONY : uart
+
+# fast build rule for target.
+uart/fast:
+	$(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/uart.dir/build.make piolib/CMakeFiles/uart.dir/build
+.PHONY : uart/fast
+
+#=============================================================================
+# Target rules for targets named pio_uart_rx
+
+# Build rule for target.
+pio_uart_rx: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pio_uart_rx
+.PHONY : pio_uart_rx
+
+# fast build rule for target.
+pio_uart_rx/fast:
+	$(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_rx.dir/build.make piolib/CMakeFiles/pio_uart_rx.dir/build
+.PHONY : pio_uart_rx/fast
+
+#=============================================================================
+# Target rules for targets named pio_uart_tx
+
+# Build rule for target.
+pio_uart_tx: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pio_uart_tx
+.PHONY : pio_uart_tx
+
+# fast build rule for target.
+pio_uart_tx/fast:
+	$(MAKE) $(MAKESILENT) -f piolib/CMakeFiles/pio_uart_tx.dir/build.make piolib/CMakeFiles/pio_uart_tx.dir/build
+.PHONY : pio_uart_tx/fast
+
 Users/masonwright/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: Users/masonwright/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 .PHONY : Users/masonwright/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
@@ -1913,8 +2004,15 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... cyw43_firmware_package"
+	@echo "... pio_uart_rx_uart_rx_pio_h"
+	@echo "... pio_uart_tx_uart_tx_pio_h"
+	@echo "... uart_uart_rx_pio_h"
+	@echo "... uart_uart_tx_pio_h"
 	@echo "... bs2_default"
 	@echo "... main"
+	@echo "... pio_uart_rx"
+	@echo "... pio_uart_tx"
+	@echo "... uart"
 	@echo "... Users/masonwright/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... Users/masonwright/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... Users/masonwright/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"

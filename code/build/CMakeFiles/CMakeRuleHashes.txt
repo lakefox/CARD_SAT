@@ -25,3 +25,9 @@ f55abe703c7c872c995d035a1ac2138a pico-sdk/src/rp2_common/cyw43_driver/pioasm/src
 386964dbf943e65ef08b5990ed1692c6 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir
 e00a05aeb35462c773d372fd356bfba0 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
 11a8a74ec8eebbaae97efd1e381ed4ab pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update
+ebb9eae8eb8aae7b69330e78282be981 piolib/CMakeFiles/pio_uart_rx_uart_rx_pio_h
+ebb9eae8eb8aae7b69330e78282be981 piolib/CMakeFiles/pio_uart_tx_uart_tx_pio_h
+ebb9eae8eb8aae7b69330e78282be981 piolib/CMakeFiles/uart_uart_rx_pio_h
+ebb9eae8eb8aae7b69330e78282be981 piolib/CMakeFiles/uart_uart_tx_pio_h
+1ca27f905a90b7e1f74dc9bedfcfd660 piolib/uart_rx.pio.h
+99932d0abcbbe1a4ccf126185be486a7 piolib/uart_tx.pio.h

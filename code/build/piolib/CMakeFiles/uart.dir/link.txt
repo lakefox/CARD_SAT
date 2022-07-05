@@ -1,0 +1,1 @@
+/usr/local/bin/arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Og -g -Wl,--build-id=none  CMakeFiles/uart.dir/uart.c.obj  -o uart.elf 

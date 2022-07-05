@@ -154,3 +154,12 @@
 /Users/masonwright/Documents/card_sat/code/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/edit_cache.dir
 /Users/masonwright/Documents/card_sat/code/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
 /Users/masonwright/Documents/card_sat/code/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/rebuild_cache.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/edit_cache.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/uart_uart_rx_pio_h.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/uart_uart_tx_pio_h.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/pio_uart_rx_uart_rx_pio_h.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/pio_uart_tx_uart_tx_pio_h.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/uart.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/pio_uart_rx.dir
+/Users/masonwright/Documents/card_sat/code/build/piolib/CMakeFiles/pio_uart_tx.dir

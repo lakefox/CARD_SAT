@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Mon Jul  4 13:15:26 2022
+# Make data base, printed on Mon Jul  4 20:27:55 2022
 
 # Variables
 
@@ -41,7 +41,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/7b/c07zbwkj03nf7cs4vm_0yw1w0000gn/T/vscode-ipc-156a8d4f-1849-4c3c-991f-8a2d17530236.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/7b/c07zbwkj03nf7cs4vm_0yw1w0000gn/T/vscode-ipc-2e381c07-ef63-47d6-a2bd-e219a55479d2.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -75,7 +75,7 @@ VSCODE_CODE_CACHE_PATH = /Users/masonwright/Library/Application Support/Code/Cac
 # environment
 LOGNAME = masonwright
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -102,7 +102,6 @@ MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 .VARIABLES := 
 # environment
 TMPDIR = /var/folders/7b/c07zbwkj03nf7cs4vm_0yw1w0000gn/T/
- 
 # automatic
 *F = $(notdir $*)
 # environment
@@ -138,11 +137,13 @@ SUFFIXES :=
 # environment
 MAKELEVEL := 0
 # environment
+PICO_SDK_PATH = /Users/masonwright/pico-sdk
+# environment
 LANG = C
 # environment
-VSCODE_PID = 4241
+VSCODE_PID = 81389
 # variable set hash-table stats:
-# Load=63/1024=6%, Rehash=0, Collisions=1/84=1%
+# Load=64/1024=6%, Rehash=0, Collisions=1/85=1%
 
 # Pattern-specific Variable Values
 
@@ -150,9 +151,9 @@ VSCODE_PID = 4241
 
 # Directories
 
-# . (device 16777233, inode 2836025): 7 files, no impossibilities.
+# . (device 16777233, inode 2836025): 8 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -224,6 +225,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Mon Jul  4 13:15:26 2022
+# Finished Make data base on Mon Jul  4 20:27:55 2022
 
  
