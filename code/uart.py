@@ -54,12 +54,12 @@ class UART:
         self.PIN_RX = Pin(PIN_RX, Pin.IN, Pin.PULL_UP)
         print(self.UART_BAUD,self.PIN_TX,self.PIN_RX,ID)
         self.sm1 = StateMachine(
-            ID,uart_tx,freq=8 * self.UART_BAUD, sideset_base=Pin(self.PIN_TX), out_base=Pin(self.PIN_TX)
+            ID*2,uart_tx,freq=8 * self.UART_BAUD, sideset_base=Pin(self.PIN_TX), out_base=Pin(self.PIN_TX)
         )
         self.sm1.active(1)
 
         self.sm2 = StateMachine(
-            ID+1,
+            (ID*2)+1,
             uart_rx,
             freq=8 * self.UART_BAUD,
             in_base=self.PIN_RX,  # For WAIT, IN
