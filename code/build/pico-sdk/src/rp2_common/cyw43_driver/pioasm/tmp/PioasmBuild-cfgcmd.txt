@@ -1,1 +1,0 @@
-cmd='/opt/local/bin/cmake;-GUnix Makefiles;-C<TMP_DIR>/PioasmBuild-cache-$<CONFIG>.cmake;<SOURCE_DIR><SOURCE_SUBDIR>'
