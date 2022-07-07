@@ -2,6 +2,7 @@ import _thread
 from machine import ADC
 from getpos import POS
 from uart import UART
+from nonmain import *
 import time
 
 # get baselines
@@ -19,86 +20,108 @@ uart4 = UART(9600,14,15,3) # Node to node
 # store for all the users connected
 users = {}
 
+# timestamp for when the last LOQREQ+ command was sent
 lastLOQREQ = 0
 
+# this satillite id
 mySatID = "1234"
 
+# que for messages that might need to be sent with the NETCHECK+
+awaitingMessages = []
+
 # core0 handles the ground station and node to node
-def core0_task(uart1, uart4):
+def uart14():
     u1Data = uart1.rx()
     u4Data = uart4.rx()
+    # requirements
+    # - NETCHECK+
+    # - SATCMD+
+    # - Switch users to use 2 or 3 on connect
+    # - awaitingMessages
 
 # core1 handles the data relay for the users
-def core1_task(uart, text):
+def uart23():
     u2Data = uart2.rx()
     u3Data = uart3.rx()
 
-    # echo the messge if no command is found
-    if u2Data.find("+") > -1:
-        if u2Data:
-            uart2.tx(u2Data)
-    else:
-        # get the request keys to find the command to run
-        u2Key = u2Data[0:u2Data.find("+")]
-        u2Values = u2Data[u2Data.find("+")+1:].split(" ")
-    if u3Data.find("+") > -1:
-        if u3Data:
-            uart3.tx(u3Data)
-    else:
-        # get the request keys to find the command to run
-        u3Key = u3Data[0:u3Data.find("+")]
-        u3Values = u3Data[u3Data.find("+")+1:].split(" ")
-
-    if u2Key:
-        # An LOCREQ message will be in the following format
-        # when a LOCREQ is received we are getting a responce from a LOCREQ we sent out
-        # LOCREQ+SATID USERID UTCTIMESTAMP
-        if u2Key == "LOCREQ":
-            if u2Values[0] == mySatID:
-                # check if user exists within our users list
-                if users[u2Values[1]]:
-                    # update their checkin time
-                    users[u2Values[1]].checkin = time.ticks_ms()
-                    # check if we are able to get locations
-                    cPos = pos.get()
-                    if cPos:
-                        # if so then add the location to the location list
-                        users[u2Values[1]].locationList.append(cPos)
-                else:
-                    # create user
-                    users[u2Values[1]] = {
-                        "checkin": time.time_ms(),
-                        "locationList": [] 
-                    }
-                    # check if we are able to get locations
-                    cPos = pos.get()
-                    if cPos:
-                        # if so then add the location to the location list
-                        users[u2Values[1]].locationList.append(cPos)
-    # make the above for 3
-
-
-    # Make a LOCREQ+ every 35 minutes
     # check if we are able to get locations
     cPos = pos.get()
+    # main message handling logic
+    messageControler(u2Data, cPos, uart2)
+    messageControler(u3Data, cPos, uart3)
+
+    # Make a LOCREQ+ every 35 minutes
     if cPos:
-        if time.time_ms()-lastLOQREQ > 2.1e+6:
+        if time.ticks_ms()-lastLOQREQ > 2.1e+6:
             uart2.tx("LOCREQ+")
             uart3.tx("LOCREQ+")
-            lastLOQREQ = time.time_ms()
-            
-    # clean the user list every cycle
-    cleanUsers()
+            lastLOQREQ = time.ticks_ms()
 
-cores = [core0_task,core1_task]
-for i in range(0,2):
-    _thread.start_new_thread(cores[i], ())
+    # clean the user list and message que every cycle
+    users = cleanUsers(users)
+    awaitingMessages = cleanAwaitMsg(awaitingMessages)
 
-def cleanUsers() {
-    for user in users:
-        if users[user].checkin:
-            # check is user has checked in within 3 hours
-            if time.ticks_ms()-users[user].checkin > 1.08e+7:
-                # if not delete the user
-                del users[user]
-}
+def messageControler(uData, cPos ,uartParam):
+    uKey = False
+    uValues = False
+    # echo the messge if no command is found
+    if uData.find("+") > -1:
+        # check if there is data
+        if uData:
+            # OTHER type message
+            # FROM TO msg
+            uArgs = uData.split(" ")
+            # check if user is on local storage
+            if users[uArgs[1]]:
+                # check if user is in foot print
+                if userInFootPrint(users[uArgs[1]], cPos):
+                    # if it is then transmit it down
+                    uartParam.tx(uData)
+                else:
+                    # Ask the network if the user is on the network using tx 4
+                    uart4.tx("NETCHECK+"+uArgs[1])
+                    # add users message to a waiting list
+                    awaitingMessages.append({
+                        "data": uData,
+                        "quedTime": time.ticks_ms()
+                    })
+    else:
+        # get the request keys to find the command to run
+        uKey = uData[0:uData.find("+")]
+        uValues = uData[uData.find("+")+1:].split(" ")
+
+        # when a LOCREQ is received we are getting a responce from a LOCREQ we sent out
+        # An LOCREQ message will be in the following format
+        # LOCREQ+SATID USERID UTCTIMESTAMP
+        if uKey == "LOCREQ":
+            # make sure the responce is to us
+            if uValues[0] == mySatID:
+                # check if user exists within our users list
+                if users[uValues[1]]:
+                    # update their checkin time
+                    users[uValues[1]].checkin = time.ticks_ms()
+                    if cPos:
+                        # if so then add the location to the location list
+                        users[uValues[1]].locationList.append(cPos)
+                else:
+                    # create user
+                    users[uValues[1]] = {
+                        "checkin": time.ticks_ms(),
+                        "locationList": [] 
+                    }
+                    if cPos:
+                        # if so then add the location to the location list
+                        users[uValues[1]].locationList.append(cPos)
+
+# this will run each task like a arduino program
+def core0_task():
+    while True:
+        uart14()
+
+def core1_task():
+    while True:
+        uart23()
+
+# start the cores
+_thread.start_new_thread(core1_task, ())
+core0_task()
