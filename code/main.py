@@ -29,6 +29,9 @@ mySatID = "1234"
 # que for messages that might need to be sent with the NETCHECK+
 awaitingMessages = []
 
+# stores the last time the users and awaiting messages were cleaned out
+lastCleaning = 0
+
 # core0 handles the ground station and node to node
 def uart14():
     u1Data = uart1.rx()
@@ -37,7 +40,7 @@ def uart14():
     # - NETCHECK+
     # - SATCMD+
     # - Switch users to use 2 or 3 on connect
-    # - awaitingMessages
+    # - awaitingMessages add SATID to the message (SATID FROM TO msg)
 
 # core1 handles the data relay for the users
 def uart23():
@@ -57,9 +60,11 @@ def uart23():
             uart3.tx("LOCREQ+")
             lastLOQREQ = time.ticks_ms()
 
-    # clean the user list and message que every cycle
-    users = cleanUsers(users)
-    awaitingMessages = cleanAwaitMsg(awaitingMessages)
+    # clean the user list and message que every 10 minutes
+    if time.ticks_ms()-lastCleaning > 600000:
+        users = cleanUsers(users)
+        awaitingMessages = cleanAwaitMsg(awaitingMessages)
+        lastCleaning = time.ticks_ms()
 
 def messageControler(uData, cPos ,uartParam):
     uKey = False
