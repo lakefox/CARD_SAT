@@ -1,17 +1,20 @@
 import random
 
 class Artic:
-    def __init__(self, tx, rx) -> None:
-        self.tx = tx
-        self.rx = rx
+    def __init__(self, txf, rxf) -> None:
+        self.txf = txf
+        self.rxf = rxf
         self.token = ''.join(random.choice([chr(i) for i in range(ord('a'),ord('z'))]) for _ in range(10))
         self.id = ""
         self.connect()
-    def tx(self, data):
-        self.tx(data+"\r")
+    def tx(self,TO, data):
+        if self.id != "":
+            self.txf(f"{self.id} {TO} {data}\r")
+        else:
+            return False
     
     def rx(self):
-        data = self.rx()
+        data = self.rxf()
 
         dKey = False
         dValues = False
@@ -45,11 +48,20 @@ class Artic:
                 # LOCREQ+SATID
                 # Responce
                 # LOCREQ+SATID USERID
-                self.tx(f"LOCREQ+{dValues[0]} {self.id}")
+                self.txf(f"LOCREQ+{dValues[0]} {self.id}\r")
 
 
     def connect(self):
-        self.tx("CONNECT+"+self.token)
+        self.txf(f"CONNECT+{self.token}\r")
 
     def setChannel():
         print()
+    
+    def getId(self):
+        return self.id
+
+    def setId(self, newId):
+        # you can set an id your self but only after you have connected and you have to pass your token 
+        # for a little more security
+        if self.id != "":
+            self.txf(f"SETID+{self.token} {self.id} {newId}\r")

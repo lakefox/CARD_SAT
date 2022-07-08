@@ -14,10 +14,10 @@ baselines[1] = ADC(19) # ADC_1
 pos = POS(baselines)
 
 # All should have a fixed freq
-uart1 = UART(9600,2,3,0) # Ground station
-uart2 = UART(9600,6,7,1) # Dynamic tasking
-uart3 = UART(9600,10,11,2) # Dynamic tasking
-uart4 = UART(9600,14,15,3) # Node to node
+uart1 = UART(1200,2,3,0) # Ground station
+uart2 = UART(1200,6,7,1) # Dynamic tasking
+uart3 = UART(1200,10,11,2) # Dynamic tasking
+uart4 = UART(1200,14,15,3) # Node to node
 
 # store for all the users connected
 users = {}
@@ -37,9 +37,6 @@ lastCleaning = 0
 # used to track who is connected to what
 usersOn2 = 0
 usersOn3 = 0
-
-# alphabet for id generation
-alphabet = string.ascii_letters + string.digits
 
 # core0 handles the ground station and node to node
 def uart14():
@@ -175,7 +172,8 @@ def messageControler(uData, cPos ,uartParam):
             users[ID] = {
                 "checkin": time.ticks_ms(),
                 "locationList": [],
-                "freq": freeDevice
+                "freq": freeDevice,
+                "token": uValues[0]
             }
             if cPos:
                 # if so then add the location to the location list
@@ -183,6 +181,14 @@ def messageControler(uData, cPos ,uartParam):
             # reply to the user which device and what ID to use identifing them with the token they made
             # CONNECT+token freeDevice ID
             uart1.tx(f"CONNECT+{uValues[0]} {freeDevice} {ID}")
+        elif uKey == "SETID":
+            # SETID+token id newId
+            # check if use exists
+            if users[uValues[1]]:
+                #  check if token matches
+                if users[uValues[0]].token == uValues[0]:
+                    # change the key
+                    users[uValues[2]] = users.pop(uValues[1])
 
 
 # this will run each task like a arduino program
