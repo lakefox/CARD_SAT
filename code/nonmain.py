@@ -1,12 +1,17 @@
 import time
 
-def cleanUsers(users):
+def cleanUsers(users, usersOn2, usersOn3):
     for user in users:
         if users[user].checkin:
             # check is user has checked in within 3 hours
             if time.ticks_ms()-users[user].checkin > 1.08e+7:
                 # if not delete the user
+                if users[user].freq == 2:
+                    usersOn2 -= 1
+                elif users[user].freq == 3:
+                    usersOn3 -= 1
                 del users[user]
+    return users, usersOn2, usersOn3;
 
 def userInFootPrint(user, cPos):
     minPos = 101

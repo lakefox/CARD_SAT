@@ -76,7 +76,7 @@ def uart23():
 
     # clean the user list and message que every 10 minutes
     if time.ticks_ms()-lastCleaning > 600000:
-        users = cleanUsers(users)
+        users, usersOn2, usersOn3 = cleanUsers(users, usersOn2, usersOn3)
         awaitingMessages = cleanAwaitMsg(awaitingMessages)
         lastCleaning = time.ticks_ms()
 

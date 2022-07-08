@@ -80,7 +80,7 @@ class UART:
         retStr = ""
         for i in range(0,self.sm2.rx_fifo()):
             c = chr(self.sm2.get() >> 24)
-            if c != "\f":
+            if c != "\r" or c != "\n":
                 self.messageBuffer += c
             else:
                 retStr = self.messageBuffer[:]

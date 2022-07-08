@@ -8,7 +8,7 @@ class Artic:
         self.id = ""
         self.connect()
     def tx(self, data):
-        self.tx(data+"\f")
+        self.tx(data+"\r")
     
     def rx(self):
         data = self.rx()
