@@ -1,6 +1,7 @@
 # Example using PIO to create a UART TX interface
 from machine import Pin
 from rp2 import PIO, StateMachine, asm_pio
+import time
 
 @asm_pio(sideset_init=PIO.OUT_HIGH, out_init=PIO.OUT_HIGH, out_shiftdir=PIO.SHIFT_RIGHT)
 def uart_tx():
@@ -45,8 +46,8 @@ def uart_rx():
     push(block)
     # fmt: on
 
-
-# Now we add 8 UART TXs, on pins 10 to 17. Use the same baud rate for all of them.
+# The UART class creates two state machines, one for TX and one for RX. The TX state machine is fed
+# characters to send, and the RX state machine is read for characters received if the termination charector
 class UART:
     def __init__(self,UART_BAUD=9600,PIN_TX=10,PIN_RX=11, ID=0):
         self.UART_BAUD = UART_BAUD
@@ -65,8 +66,9 @@ class UART:
             in_base=self.PIN_RX,  # For WAIT, IN
             jmp_pin=self.PIN_RX,  # For JMP
         )
-        self.sm2.irq(self.handler)
         self.sm2.active(1)
+        # store each message in a buffer then as the loop asks for it just push the newest one
+        self.messageBuffer = []
 
     # We can print characters from each UART by pushing them to the TX FIFO
     def tx(self, msg):
@@ -75,12 +77,17 @@ class UART:
         return 1;
     def rx(self):
         msg = ""
+        retStr = ""
         for i in range(0,self.sm2.rx_fifo()):
-            msg += chr(self.sm2.get() >> 24)
-        return msg
-
-    def handler(sm):
-        print("break", time.ticks_ms(), end=" ")
+            c = chr(self.sm2.get() >> 24)
+            if c != "\f":
+                self.messageBuffer += c
+            else:
+                retStr = self.messageBuffer[:]
+        if retStr != "":
+            return retStr
+        else:
+            return False
 
 
 # uart1 = UART(9600,10,11,0)
@@ -88,13 +95,13 @@ class UART:
 # uart3 = UART(9600,14,15,6)
 
 # # Function for core1 to execute to write to the given UART.
-# def core1_task(uart, text):
-#     while (True):
-#         uart.tx(text)
+# # def core1_task(uart, text):
+# #     while (True):
+# #         uart.tx(text)
 
-# # Print a different message from each UART
+# # # Print a different message from each UART
 
-# _thread.start_new_thread(core1_task, (uart3, "text"))
+# # _thread.start_new_thread(core1_task, (uart3, "text"))
 
 # while (True):
 #     # uart1.tx("Hello from UART!\n")

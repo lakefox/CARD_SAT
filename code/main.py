@@ -4,6 +4,7 @@ from getpos import POS
 from uart import UART
 from nonmain import *
 import time
+import random
 
 # get baselines
 baselines = []
@@ -12,6 +13,7 @@ baselines[1] = ADC(19) # ADC_1
 
 pos = POS(baselines)
 
+# All should have a fixed freq
 uart1 = UART(9600,2,3,0) # Ground station
 uart2 = UART(9600,6,7,1) # Dynamic tasking
 uart3 = UART(9600,10,11,2) # Dynamic tasking
@@ -32,15 +34,25 @@ awaitingMessages = []
 # stores the last time the users and awaiting messages were cleaned out
 lastCleaning = 0
 
+# used to track who is connected to what
+usersOn2 = 0
+usersOn3 = 0
+
+# alphabet for id generation
+alphabet = string.ascii_letters + string.digits
+
 # core0 handles the ground station and node to node
 def uart14():
     u1Data = uart1.rx()
     u4Data = uart4.rx()
-    # requirements
-    # - NETCHECK+
-    # - SATCMD+
-    # - Switch users to use 2 or 3 on connect
-    # - awaitingMessages add SATID to the message (SATID FROM TO msg)
+
+    # check if we are able to get locations
+    cPos = pos.get()
+    # main message handling logic
+    if u1Data:
+        messageControler(u1Data, cPos, uart1)
+    if u4Data:
+        messageControler(u4Data, cPos, uart4)
 
 # core1 handles the data relay for the users
 def uart23():
@@ -50,14 +62,16 @@ def uart23():
     # check if we are able to get locations
     cPos = pos.get()
     # main message handling logic
-    messageControler(u2Data, cPos, uart2)
-    messageControler(u3Data, cPos, uart3)
+    if u2Data:
+        messageControler(u2Data, cPos, uart2)
+    if u3Data:
+        messageControler(u3Data, cPos, uart3)
 
     # Make a LOCREQ+ every 35 minutes
     if cPos:
         if time.ticks_ms()-lastLOQREQ > 2.1e+6:
-            uart2.tx("LOCREQ+")
-            uart3.tx("LOCREQ+")
+            uart2.tx("LOCREQ+"+mySatID)
+            uart3.tx("LOCREQ+"+mySatID)
             lastLOQREQ = time.ticks_ms()
 
     # clean the user list and message que every 10 minutes
@@ -88,7 +102,8 @@ def messageControler(uData, cPos ,uartParam):
                     # add users message to a waiting list
                     awaitingMessages.append({
                         "data": uData,
-                        "quedTime": time.ticks_ms()
+                        "quedTime": time.ticks_ms(),
+                        "TO": uArgs[1]
                     })
     else:
         # get the request keys to find the command to run
@@ -97,7 +112,7 @@ def messageControler(uData, cPos ,uartParam):
 
         # when a LOCREQ is received we are getting a responce from a LOCREQ we sent out
         # An LOCREQ message will be in the following format
-        # LOCREQ+SATID USERID UTCTIMESTAMP
+        # LOCREQ+SATID USERID
         if uKey == "LOCREQ":
             # make sure the responce is to us
             if uValues[0] == mySatID:
@@ -108,15 +123,67 @@ def messageControler(uData, cPos ,uartParam):
                     if cPos:
                         # if so then add the location to the location list
                         users[uValues[1]].locationList.append(cPos)
-                else:
-                    # create user
-                    users[uValues[1]] = {
-                        "checkin": time.ticks_ms(),
-                        "locationList": [] 
-                    }
-                    if cPos:
-                        # if so then add the location to the location list
-                        users[uValues[1]].locationList.append(cPos)
+        elif uKey == "NETCHECK":
+            # request we are being asked to reply to
+            # NETCHECK+satID userID
+            # responce to a NETCHECK we asked
+            # NETCHECK+mySatID theirSatID userID
+            if uValues[0] == mySatID:
+                # ask the node relay
+                # RELAY+theirSatID FROM TO msg
+                for msg in awaitingMessages:
+                    # check each msg for the TO recepient
+                    if msg.TO == uValues[2]:
+                        uart4.tx(f"RELAY+{uValues[1]} {msg.data}")
+                        awaitingMessages.remove(msg)
+            else:
+                # check if we have the user stored
+                if users[uValues[1]]:
+                    # check if user can be contacted
+                    if userInFootPrint(users[uValues[1]], cPos):
+                        # tell the node we have it
+                        uart4.tx(f"NETCHECK+{mySatID} {uValues[0]} {uValues[1]}")
+        elif uKey == "RELAY":
+            # RELAY+mySatID FROM TO msg
+            if uValues[0] == mySatID:
+                if users[uValues[2]].freq == 2:
+                    # just send the FROM TO msg
+                    uart2.tx(" ".join(uData.split(" ")[2:]))
+                if users[uValues[2]].freq == 3:
+                    # just send the FROM TO msg
+                    uart3.tx(" ".join(uData.split(" ")[2:]))
+        elif uKey == "CONNECT":
+            # CONNECT+randomToken
+            # generate random id
+            ID = ''.join(random.choice([chr(i) for i in range(ord('a'),ord('z'))]) for _ in range(10))
+            idGood = False
+            # generate ids until a new one is created
+            while not idGood:
+                if ID in users.keys():
+                    ID = ''.join(random.choice([chr(i) for i in range(ord('a'),ord('z'))]) for _ in range(10))
+                    idGood = True
+
+            # keep track of devices
+            freeDevice = 2
+            if usersOn2 > usersOn3:
+                freeDevice = 3
+                usersOn3 += 1
+            else: 
+                usersOn2 += 1
+
+            # create user
+            users[ID] = {
+                "checkin": time.ticks_ms(),
+                "locationList": [],
+                "freq": freeDevice
+            }
+            if cPos:
+                # if so then add the location to the location list
+                users[ID].locationList.append(cPos)
+            # reply to the user which device and what ID to use identifing them with the token they made
+            # CONNECT+token freeDevice ID
+            uart1.tx(f"CONNECT+{uValues[0]} {freeDevice} {ID}")
+
 
 # this will run each task like a arduino program
 def core0_task():
