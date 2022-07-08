@@ -1,5 +1,4 @@
 import random
-import urllib
 
 class Artic:
     def __init__(self, tx, rx) -> None:

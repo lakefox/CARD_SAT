@@ -90,7 +90,7 @@ class UART:
             return False
 
 
-# uart1 = UART(9600,10,11,0)
+uart1 = UART(9600,10,11,0)
 # uart2 = UART(9600,6,7,2)
 # uart3 = UART(9600,14,15,6)
 
@@ -103,8 +103,8 @@ class UART:
 
 # # _thread.start_new_thread(core1_task, (uart3, "text"))
 
-# while (True):
-#     # uart1.tx("Hello from UART!\n")
-#     t = uart1.rx()
-#     if (t):
-#         print(t)
+while (True):
+    uart1.tx("Hello from UART!\n")
+    t = uart1.rx()
+    if (t):
+        print(t)
