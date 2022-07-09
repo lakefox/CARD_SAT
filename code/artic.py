@@ -15,6 +15,21 @@ class Artic:
     
     def rx(self):
         data = self.rxf()
+        error = False
+        errMsg = False
+
+        # cut out the add number of spaces
+        verifyNum = ord(data[data.rfind(" ")+1:data.rfind("\n")])
+        # remove the end of the data
+        data = data[0:data.rfind(" ")]
+        # count the spaces
+        spaceCount = data.count(" ")
+
+        # let the user know there was an error
+        if verifyNum != spaceCount:
+            error = True
+            errMsg = "Data transmission error."
+            
 
         dKey = False
         dValues = False
@@ -29,7 +44,9 @@ class Artic:
                 if dArgs[1] == self.id:
                     return {
                         "from": dArgs[0],
-                        "data": " ".join(dArgs[2:])
+                        "data": " ".join(dArgs[2:]),
+                        "error": error,
+                        "error_message": errMsg
                     } 
                 
         else:
@@ -65,3 +82,4 @@ class Artic:
         # for a little more security
         if self.id != "":
             self.txf(f"SETID+{self.token} {self.id} {newId}\r")
+            self.id = newId

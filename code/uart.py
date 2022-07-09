@@ -1,4 +1,5 @@
 # Example using PIO to create a UART TX interface
+from cgitb import reset
 from machine import Pin
 from rp2 import PIO, StateMachine, asm_pio
 import time
@@ -72,6 +73,8 @@ class UART:
 
     # We can print characters from each UART by pushing them to the TX FIFO
     def tx(self, msg):
+        # add a data transfer checksum
+        msg = msg +" "+chr(msg.count(" "))+"\n"
         for c in msg:
             self.sm1.put(ord(c))
         return 1;
