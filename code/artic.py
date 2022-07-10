@@ -1,7 +1,8 @@
 import random
+from lib.nonmain import randArr
 
-class Artic:
-    def __init__(self, txf, rxf) -> None:
+class ARTIC:
+    def __init__(self, txf, rxf):
         self.txf = txf
         self.rxf = rxf
         self.token = ''.join(random.choice([chr(i) for i in range(ord('a'),ord('z'))]) for _ in range(10))
@@ -9,28 +10,14 @@ class Artic:
         self.connect()
     def tx(self,TO, data):
         if self.id != "":
-            self.txf(f"{self.id} {TO} {data}\r")
+            term = self.randArr()
+            # this doesn't work because of the self.txf 
+            self.txf(f"{term} {self.id} {TO} {data} {term}")
         else:
             return False
     
     def rx(self):
         data = self.rxf()
-        error = False
-        errMsg = False
-
-        # cut out the add number of spaces
-        verifyNum = ord(data[data.rfind(" ")+1:data.rfind("\n")])
-        # remove the end of the data
-        data = data[0:data.rfind(" ")]
-        # count the spaces
-        spaceCount = data.count(" ")
-
-        # let the user know there was an error
-        if verifyNum != spaceCount:
-            error = True
-            errMsg = "Data transmission error."
-            
-
         dKey = False
         dValues = False
         # echo the messge if no command is found
@@ -44,9 +31,7 @@ class Artic:
                 if dArgs[1] == self.id:
                     return {
                         "from": dArgs[0],
-                        "data": " ".join(dArgs[2:]),
-                        "error": error,
-                        "error_message": errMsg
+                        "data": " ".join(dArgs[2:])
                     } 
                 
         else:
@@ -83,3 +68,6 @@ class Artic:
         if self.id != "":
             self.txf(f"SETID+{self.token} {self.id} {newId}\r")
             self.id = newId
+    
+    def randArr():
+        return ''.join(random.choice(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) for _ in range())

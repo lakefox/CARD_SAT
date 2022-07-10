@@ -15,9 +15,9 @@ class POS:
         
         # updateVREF();
         vrefs = []
-        vrefs[0] = ADC(20) # ADC_2
-        vrefs[1] = ADC(19) # ADC_1
-        vrefs[2] = ADC(18) # ADC_0
+        vrefs.append(ADC(28).read_u16()) # ADC_2
+        vrefs.append(ADC(27).read_u16()) # ADC_1
+        vrefs.append(ADC(26).read_u16()) # ADC_0
 
         current1 = (self.baselines[0] - vrefs[0]) / 0.1;
         current2 = (self.baselines[1] - vrefs[1]) / 0.1;
@@ -53,8 +53,8 @@ class POS:
             return avgDeg
         else:
             if (time.ticks_ms() <= self.orbitCompleteTime):
-                testV1 = ADC(18);
-                testV2 = ADC(19);
+                testV1 = ADC(26).read_u16();
+                testV2 = ADC(27).read_u16();
 
                 # set maxV* to the max voltage we see
                 if (testV1 > self.maxV1):

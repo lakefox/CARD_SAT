@@ -1,15 +1,15 @@
 import _thread
 from machine import ADC
-from getpos import POS
-from uart import UART
-from nonmain import *
+from lib.getpos import POS
+from lib.uart import UART
+from lib.nonmain import *
 import time
 import random
 
 # get baselines
 baselines = []
-baselines[0] = ADC(18) # ADC_0
-baselines[1] = ADC(19) # ADC_1
+baselines.append(ADC(26).read_u16()) # ADC_0
+baselines.append(ADC(27).read_u16()) # ADC_1
 
 pos = POS(baselines)
 
@@ -53,6 +53,13 @@ def uart14():
 
 # core1 handles the data relay for the users
 def uart23():
+    global lastCleaning
+    global users
+    global usersOn2
+    global usersOn3
+    global awaitingMessages
+    global lastLOQREQ
+
     u2Data = uart2.rx()
     u3Data = uart3.rx()
 
@@ -60,8 +67,12 @@ def uart23():
     cPos = pos.get()
     # main message handling logic
     if u2Data:
+        print("u2 data rxd")
+        print(u2Data)
         messageControler(u2Data, cPos, uart2)
     if u3Data:
+        print("u3 data rxd")
+        print(u3Data)
         messageControler(u3Data, cPos, uart3)
 
     # Make a LOCREQ+ every 35 minutes
@@ -99,8 +110,7 @@ def messageControler(uData, cPos ,uartParam):
                     # add users message to a waiting list
                     awaitingMessages.append({
                         "data": uData,
-                        "quedTime": time.ticks_ms(),
-                        "TO": uArgs[1]
+                        "quedTime": time.ticks_ms()
                     })
     else:
         # get the request keys to find the command to run
@@ -145,19 +155,21 @@ def messageControler(uData, cPos ,uartParam):
             if uValues[0] == mySatID:
                 if users[uValues[2]].freq == 2:
                     # just send the FROM TO msg
-                    uart2.tx(" ".join(uData.split(" ")[2:]))
+                    cleanMsg = " ".join(uData.split(" ")[2:])
+                    uart2.tx(cleanMsg)
                 if users[uValues[2]].freq == 3:
                     # just send the FROM TO msg
-                    uart3.tx(" ".join(uData.split(" ")[2:]))
+                    cleanMsg = " ".join(uData.split(" ")[2:])
+                    uart3.tx(cleanMsg)
         elif uKey == "CONNECT":
             # CONNECT+randomToken
             # generate random id
-            ID = ''.join(random.choice([chr(i) for i in range(ord('a'),ord('z'))]) for _ in range(10))
+            ID = randArr()
             idGood = False
             # generate ids until a new one is created
             while not idGood:
                 if ID in users.keys():
-                    ID = ''.join(random.choice([chr(i) for i in range(ord('a'),ord('z'))]) for _ in range(10))
+                    ID = randArr()
                     idGood = True
 
             # keep track of devices
@@ -189,16 +201,22 @@ def messageControler(uData, cPos ,uartParam):
                 if users[uValues[0]].token == uValues[0]:
                     # change the key
                     users[uValues[2]] = users.pop(uValues[1])
-
-
 # this will run each task like a arduino program
 def core0_task():
-    while True:
+    i = 0
+    while i < 50:
         uart14()
+        #print("core0 ",i)
+        time.sleep(0.1)
+        i += 1
 
 def core1_task():
-    while True:
+    i = 0
+    while i < 50:
         uart23()
+        print("core1 ",i)
+        time.sleep(0.1)
+        i += 1
 
 # start the cores
 _thread.start_new_thread(core1_task, ())

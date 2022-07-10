@@ -1,8 +1,8 @@
 # Example using PIO to create a UART TX interface
-from cgitb import reset
 from machine import Pin
 from rp2 import PIO, StateMachine, asm_pio
-import time
+import random
+
 
 @asm_pio(sideset_init=PIO.OUT_HIGH, out_init=PIO.OUT_HIGH, out_shiftdir=PIO.SHIFT_RIGHT)
 def uart_tx():
@@ -18,7 +18,7 @@ def uart_tx():
     nop()      .side(1)       [6]
 
 @asm_pio(
-    in_shiftdir=rp2.PIO.SHIFT_RIGHT,
+    in_shiftdir=PIO.SHIFT_RIGHT,
 )
 def uart_rx():
     # fmt: off
@@ -74,26 +74,25 @@ class UART:
     # We can print characters from each UART by pushing them to the TX FIFO
     def tx(self, msg):
         # add a data transfer checksum
-        msg = msg +" "+chr(msg.count(" "))+"\n"
         for c in msg:
             self.sm1.put(ord(c))
         return 1;
     def rx(self):
         msg = ""
         retStr = ""
+        print(self.sm2.rx_fifo())
         for i in range(0,self.sm2.rx_fifo()):
-            c = chr(self.sm2.get() >> 24)
-            if c != "\r" or c != "\n":
-                self.messageBuffer += c
-            else:
-                retStr = self.messageBuffer[:]
-        if retStr != "":
+            k = self.sm2.get()
+            c = chr(k >> 24)
+            print(i,k)
+            self.messageBuffer += c
+            print(self.messageBuffer)
+        if self.messageBuffer[0:5] == self.messageBuffer[-5]:
             return retStr
         else:
             return False
 
-
-uart1 = UART(9600,10,11,0)
+# uart1 = UART(9600,10,11,0)
 # uart2 = UART(9600,6,7,2)
 # uart3 = UART(9600,14,15,6)
 
