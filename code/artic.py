@@ -1,21 +1,38 @@
 import random
-from lib.nonmain import randArr
+from time import sleep
 
 class ARTIC:
     def __init__(self, txf, rxf):
         self.txf = txf
         self.rxf = rxf
         self.token = ''.join(random.choice([chr(i) for i in range(ord('a'),ord('z'))]) for _ in range(10))
-        self.id = ""
+        self.id = "123"
+        self.termLen = 5
         self.connect()
+
+    def connect(self):
+        term = self.randArr()
+        print(term)
+        self.txSlow(f"CONNECT+{self.token}")
+
     def tx(self,TO, data):
+        print(data)
+        print("working")
+        print(self.id != "")
         if self.id != "":
-            term = self.randArr()
-            # this doesn't work because of the self.txf 
-            self.txf(f"{term} {self.id} {TO} {data} {term}")
+            self.txSlow(f"{self.id} {TO} {data}")
         else:
             return False
-    
+
+    def txSlow(self, msg):
+        term = self.randArr()
+        m = bytes(f"{term} {msg} {term}",'utf8')
+        # print(m)
+        for i in range(0, int(len(m)/3)+1):
+            # print(m[i*3:(i*3)+3])
+            self.txf(m[i*3:(i*3)+3])
+            sleep(0.3)
+
     def rx(self):
         data = self.rxf()
         dKey = False
@@ -32,8 +49,7 @@ class ARTIC:
                     return {
                         "from": dArgs[0],
                         "data": " ".join(dArgs[2:])
-                    } 
-                
+                    }
         else:
             # get the request keys to find the command to run
             dKey = data[0:data.find("+")]
@@ -50,13 +66,10 @@ class ARTIC:
                 # LOCREQ+SATID
                 # Responce
                 # LOCREQ+SATID USERID
-                self.txf(f"LOCREQ+{dValues[0]} {self.id}\r")
+                term = self.randArr()
+                self.txSlow(f"LOCREQ+{dValues[0]} {self.id} {term}")
 
-
-    def connect(self):
-        self.txf(f"CONNECT+{self.token}\r")
-
-    def setChannel():
+    def setChannel(self):
         print()
     
     def getId(self):
@@ -66,8 +79,8 @@ class ARTIC:
         # you can set an id your self but only after you have connected and you have to pass your token 
         # for a little more security
         if self.id != "":
-            self.txf(f"SETID+{self.token} {self.id} {newId}\r")
+            self.txSlow(f"SETID+{self.token} {self.id} {newId}")
             self.id = newId
     
-    def randArr():
-        return ''.join(random.choice(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) for _ in range())
+    def randArr(self):
+        return ''.join(random.choice(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) for _ in range(self.termLen))

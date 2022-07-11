@@ -1,8 +1,7 @@
 # Example using PIO to create a UART TX interface
 from machine import Pin
 from rp2 import PIO, StateMachine, asm_pio
-import random
-
+from lib.nonmain import cleanNonANC
 
 @asm_pio(sideset_init=PIO.OUT_HIGH, out_init=PIO.OUT_HIGH, out_shiftdir=PIO.SHIFT_RIGHT)
 def uart_tx():
@@ -78,19 +77,19 @@ class UART:
             self.sm1.put(ord(c))
         return 1;
     def rx(self):
-        msg = ""
         retStr = ""
-        print(self.sm2.rx_fifo())
         for i in range(0,self.sm2.rx_fifo()):
             k = self.sm2.get()
             c = chr(k >> 24)
-            print(i,k)
             self.messageBuffer += c
-            print(self.messageBuffer)
-        if self.messageBuffer[0:5] == self.messageBuffer[-5]:
-            return retStr
-        else:
-            return False
+            print(c)
+        retStr = cleanNonANC(self.messageBuffer)
+        if len(retStr) > 10:
+            if retStr[0:5] == retStr[-5:]:
+                self.messageBuffer = []
+                return retStr[6:-6]
+            else:
+                return False
 
 # uart1 = UART(9600,10,11,0)
 # uart2 = UART(9600,6,7,2)

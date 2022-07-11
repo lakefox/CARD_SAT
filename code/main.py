@@ -44,7 +44,8 @@ def uart14():
     u4Data = uart4.rx()
 
     # check if we are able to get locations
-    cPos = pos.get()
+    # cPos = pos.get()
+    cPos = 50
     # main message handling logic
     if u1Data:
         messageControler(u1Data, cPos, uart1)
@@ -64,7 +65,8 @@ def uart23():
     u3Data = uart3.rx()
 
     # check if we are able to get locations
-    cPos = pos.get()
+    # cPos = pos.get()
+    cPos = 50
     # main message handling logic
     if u2Data:
         print("u2 data rxd")
@@ -89,17 +91,21 @@ def uart23():
         lastCleaning = time.ticks_ms()
 
 def messageControler(uData, cPos ,uartParam):
+    global users
+    global usersOn2
+    global usersOn3
+    global awaitingMessages
     uKey = False
     uValues = False
     # echo the messge if no command is found
-    if uData.find("+") > -1:
+    if uData.find("+") == -1:
         # check if there is data
         if uData:
             # OTHER type message
             # FROM TO msg
             uArgs = uData.split(" ")
             # check if user is on local storage
-            if users[uArgs[1]]:
+            if uArgs[1] in users:
                 # check if user is in foot print
                 if userInFootPrint(users[uArgs[1]], cPos):
                     # if it is then transmit it down
@@ -116,7 +122,7 @@ def messageControler(uData, cPos ,uartParam):
         # get the request keys to find the command to run
         uKey = uData[0:uData.find("+")]
         uValues = uData[uData.find("+")+1:].split(" ")
-
+        print(uKey,uValues)
         # when a LOCREQ is received we are getting a responce from a LOCREQ we sent out
         # An LOCREQ message will be in the following format
         # LOCREQ+SATID USERID
@@ -165,12 +171,6 @@ def messageControler(uData, cPos ,uartParam):
             # CONNECT+randomToken
             # generate random id
             ID = randArr()
-            idGood = False
-            # generate ids until a new one is created
-            while not idGood:
-                if ID in users.keys():
-                    ID = randArr()
-                    idGood = True
 
             # keep track of devices
             freeDevice = 2
@@ -189,9 +189,10 @@ def messageControler(uData, cPos ,uartParam):
             }
             if cPos:
                 # if so then add the location to the location list
-                users[ID].locationList.append(cPos)
+                users[ID]["locationList"].append(cPos)
             # reply to the user which device and what ID to use identifing them with the token they made
             # CONNECT+token freeDevice ID
+            print(f"CONNECT+{uValues[0]} {freeDevice} {ID}")
             uart1.tx(f"CONNECT+{uValues[0]} {freeDevice} {ID}")
         elif uKey == "SETID":
             # SETID+token id newId
@@ -204,7 +205,7 @@ def messageControler(uData, cPos ,uartParam):
 # this will run each task like a arduino program
 def core0_task():
     i = 0
-    while i < 50:
+    while i < 200:
         uart14()
         #print("core0 ",i)
         time.sleep(0.1)
@@ -212,7 +213,7 @@ def core0_task():
 
 def core1_task():
     i = 0
-    while i < 50:
+    while i < 200:
         uart23()
         print("core1 ",i)
         time.sleep(0.1)
