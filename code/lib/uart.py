@@ -2,6 +2,7 @@
 from machine import Pin
 from rp2 import PIO, StateMachine, asm_pio
 from lib.nonmain import cleanNonANC
+from time import sleep
 
 @asm_pio(sideset_init=PIO.OUT_HIGH, out_init=PIO.OUT_HIGH, out_shiftdir=PIO.SHIFT_RIGHT)
 def uart_tx():
@@ -74,7 +75,9 @@ class UART:
     def tx(self, msg):
         # add a data transfer checksum
         for c in msg:
+            print("ord ",ord(c))
             self.sm1.put(ord(c))
+            sleep(0.3)
         return 1;
     def rx(self):
         retStr = ""

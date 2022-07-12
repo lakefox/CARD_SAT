@@ -193,6 +193,7 @@ def messageControler(uData, cPos ,uartParam):
             # reply to the user which device and what ID to use identifing them with the token they made
             # CONNECT+token freeDevice ID
             print(f"CONNECT+{uValues[0]} {freeDevice} {ID}")
+            time.sleep(1)
             uart1.tx(f"CONNECT+{uValues[0]} {freeDevice} {ID}")
         elif uKey == "SETID":
             # SETID+token id newId

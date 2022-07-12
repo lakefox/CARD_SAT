@@ -11,14 +11,9 @@ class ARTIC:
         self.connect()
 
     def connect(self):
-        term = self.randArr()
-        print(term)
         self.txSlow(f"CONNECT+{self.token}")
 
     def tx(self,TO, data):
-        print(data)
-        print("working")
-        print(self.id != "")
         if self.id != "":
             self.txSlow(f"{self.id} {TO} {data}")
         else:
@@ -35,39 +30,43 @@ class ARTIC:
 
     def rx(self):
         data = self.rxf()
+        if data != b'':
+            print(data)
+        # print(ord(data))
+        # print(chr(ord(data)))
         dKey = False
         dValues = False
         # echo the messge if no command is found
-        if data.find("+") > -1:
-            # check if there is data
-            if data:
-                # OTHER type message
-                # FROM TO msg
-                dArgs = data.split(" ")
-                # check if message is to you
-                if dArgs[1] == self.id:
-                    return {
-                        "from": dArgs[0],
-                        "data": " ".join(dArgs[2:])
-                    }
-        else:
-            # get the request keys to find the command to run
-            dKey = data[0:data.find("+")]
-            dValues = data[data.find("+")+1:].split(" ")
+        # if data.find("+") > -1:
+        #     # check if there is data
+        #     if data:
+        #         # OTHER type message
+        #         # FROM TO msg
+        #         dArgs = data.split(" ")
+        #         # check if message is to you
+        #         if dArgs[1] == self.id:
+        #             return {
+        #                 "from": dArgs[0],
+        #                 "data": " ".join(dArgs[2:])
+        #             }
+        # else:
+        #     # get the request keys to find the command to run
+        #     dKey = data[0:data.find("+")]
+        #     dValues = data[data.find("+")+1:].split(" ")
 
-            if dKey == "CONNECT":
-                # CONNECT+token channel ID
-                if dValues[0] == self.token:
-                    self.id = dValues[2]
-                    self.setChannel(dValues[1])
+        #     if dKey == "CONNECT":
+        #         # CONNECT+token channel ID
+        #         if dValues[0] == self.token:
+        #             self.id = dValues[2]
+        #             self.setChannel(dValues[1])
 
-            elif dKey == "LOCREQ":
-                # An LOCREQ message will be in the following format
-                # LOCREQ+SATID
-                # Responce
-                # LOCREQ+SATID USERID
-                term = self.randArr()
-                self.txSlow(f"LOCREQ+{dValues[0]} {self.id} {term}")
+        #     elif dKey == "LOCREQ":
+        #         # An LOCREQ message will be in the following format
+        #         # LOCREQ+SATID
+        #         # Responce
+        #         # LOCREQ+SATID USERID
+        #         term = self.randArr()
+        #         self.txSlow(f"LOCREQ+{dValues[0]} {self.id} {term}")
 
     def setChannel(self):
         print()
