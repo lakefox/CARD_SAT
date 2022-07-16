@@ -12,13 +12,14 @@ def read():
     data_left = ser.inWaiting()
     rx_data += ser.read(data_left)
     return rx_data
-
-artic = ARTIC(ser.write,read)
-
+def cleanData(data):
+        newdata = []
+        for i in data:
+            if i != 0:
+                newdata.append(i)
+        return newdata
 i = 0
 while i < 300:
-    artic.rx()
+    print(cleanData(read()))
+    # ser.read(10)
     i += 1
-
-# str = "hello dude"
-# artic.tx("TODI",str)

@@ -8,7 +8,7 @@ class ARTIC:
         self.token = ''.join(random.choice([chr(i) for i in range(ord('a'),ord('z'))]) for _ in range(10))
         self.id = "123"
         self.termLen = 5
-        self.connect()
+        # self.connect()
 
     def connect(self):
         self.txSlow(f"CONNECT+{self.token}")
@@ -24,14 +24,14 @@ class ARTIC:
         m = bytes(f"{term} {msg} {term}",'utf8')
         # print(m)
         for i in range(0, int(len(m)/3)+1):
-            # print(m[i*3:(i*3)+3])
             self.txf(m[i*3:(i*3)+3])
             sleep(0.3)
 
     def rx(self):
         data = self.rxf()
-        if data != b'':
-            print(data)
+
+        #if data != b'':
+        print(self.cleanData(data))
         # print(ord(data))
         # print(chr(ord(data)))
         dKey = False
@@ -83,3 +83,10 @@ class ARTIC:
     
     def randArr(self):
         return ''.join(random.choice(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) for _ in range(self.termLen))
+
+    def cleanData(self, data):
+        newdata = []
+        for i in data:
+            if i != 0:
+                newdata.append(i)
+        return newdata

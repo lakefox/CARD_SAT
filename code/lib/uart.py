@@ -75,19 +75,20 @@ class UART:
     def tx(self, msg):
         # add a data transfer checksum
         for c in msg:
-            print("ord ",ord(c))
-            self.sm1.put(ord(c))
-            sleep(0.3)
-        return 1;
+            print(c)
+            self.sm1.put(c)
+            self.sm1.restart()
+            sleep(0.25)
     def rx(self):
         retStr = ""
         for i in range(0,self.sm2.rx_fifo()):
             k = self.sm2.get()
+            print(k)
             c = chr(k >> 24)
             self.messageBuffer += c
-            print(c)
         retStr = cleanNonANC(self.messageBuffer)
         if len(retStr) > 10:
+            print(retStr)
             if retStr[0:5] == retStr[-5:]:
                 self.messageBuffer = []
                 return retStr[6:-6]
